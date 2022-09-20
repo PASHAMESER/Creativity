@@ -10,12 +10,12 @@ body {
 
 @font-face {
     font-family: "Tajawal";
-    src: url(/fonts/Tajawal-Black.ttf);
+    src: url(./fonts/Tajawal-Black.ttf);
 }
 
 @font-face {
     font-family: "TajawalOne";
-    src: url(/fonts/Tajawal-Medium.ttf);
+    src: url(./fonts/Tajawal-Medium.ttf);
 }
 
 ::selection {
