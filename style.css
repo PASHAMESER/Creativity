@@ -378,7 +378,9 @@ body {
     text-align: center;
     padding: 150px 0px;
     background-image: linear-gradient(to right, #b392ac, #e8c2ca);
-    ;
+}
+.devForContanier .boxContact {
+    margin: 10px;
 }
 
 .devForContanier a {
@@ -409,6 +411,7 @@ body {
     text-align: center;
     padding: 100px 0px;
     gap: 50px;
+    margin: 5px;
 }
 
 .devFiveContanier .box-Content {
