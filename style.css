@@ -423,14 +423,13 @@ body {
     font-size: 18px;
     font-family: TajawalOne;
     font-weight: 100;
-    transition: 0.5s;
     outline: none;
 }
 
 .devFiveContanier #text-Emial:focus {
     border: #e8c2ca 1px solid;
     width: 180px;
-    transition: 0.3;
+    transition: 0.5s;
 }
 
 .devFiveContanier #btn-text-send-email {

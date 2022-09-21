@@ -1,0 +1,182 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Tajawal;
+}
+
+@font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal-Black.ttf);
+}
+
+@font-face {
+    font-family: "TajawalOne";
+    src: url(../fonts/Tajawal-Medium.ttf);
+}
+
+::selection {
+    color: white;
+    background-color: deeppink;
+}
+
+.ContainerPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* بداية كود ديف البوكس كونتينر */
+.boxContainer {
+    position: relative;
+    top: 100px;
+    height: 900px;
+    width: 1300px;
+    background-color: #edf2f4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerPage .boxLogin {
+    position: relative;
+    height: 700px;
+    width: 500px;
+    background-color: #edf2f4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia .devItemFaceBook {
+    padding: 15px 50px;
+    background-color: #4267B2;
+    border-radius: 50px;
+}
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia .devItemTwitter {
+    padding: 15px 50px;
+    background-color: #1DA1F2;
+    border-radius: 50px;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia i {
+    color: white;
+}
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia a {
+    color: white;
+    font-family: "TajawalOne";
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia h3 {
+    font-family: "TajawalOne";
+}
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia form [type="text"] , [type="password"] {
+    font-family: "TajawalOne";
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia form input:focus {
+    border: #e8c2ca 1px solid;
+    width: 330px;
+    transition: 0.3s;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia .devBoxRememberMe {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia .devBoxRememberMe input {
+    height: 20px;
+    width: 20px;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia .devBoxRememberMe a {
+    color: #4267B2;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia .devBoxRememberMe .devrememberme {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia #btn-login {
+    color: white;
+    padding: 15px 100px;
+    border: none;
+    background-image: linear-gradient(to right, #FFE3E1, #FF9494);
+    border-radius: 50px;
+    font-family: Tajawal;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia #btn-login:hover {
+    background: none;
+    cursor: pointer;
+    border: solid 1px #FF9494;
+    color: #FF9494;
+    font-size: 24px;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia #btn-registered  {
+    color: #FF9494;
+    padding: 15px 100px;
+    background: none;
+    border: solid 2px #e8c2ca;
+    font-family: Tajawal;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.ContainerPage .boxLogin .boxLogin-For-SocialMedia #btn-registered:hover {
+    background-image: linear-gradient(to right, #FF9494, #FFE3E1);
+    cursor: pointer;
+    border: solid 1px #FF9494;
+    color: white;
+}
+
+
+
+
+/* Media Mobile  */
+@media (max-width:399px) {
+    .ContainerPage .boxLogin{
+        width: 350px;
+    }
+    .ContainerPage .boxLogin .boxLogin-For-SocialMedia form [type="text"] , [type="password"]{
+        width: 200px;
+    }
+    .ContainerPage .boxLogin .boxLogin-For-SocialMedia form input:focus{
+        width: 220px;
+    }
+    .ContainerPage .boxLogin .boxLogin-For-SocialMedia #btn-login {
+        padding: 15px 50px;
+    }
+    .ContainerPage .boxLogin .boxLogin-For-SocialMedia #btn-registered {
+        padding: 15px 50px;
+    }
+}
+
+/* نهاية كود ديف البوكس كونتينر */

@@ -83,3 +83,14 @@ let loading = () => {
 
 
 window.onload = loading()
+
+// بداية كود الضغط علي ابدأ
+
+let linkBtnStr =document.getElementById("link-btn-str")
+
+linkBtnStr.addEventListener('click' , ()=>{
+  setTimeout(()=>{
+    this.location.href = "HTML/login.html"
+  },500)
+  loading()
+})
