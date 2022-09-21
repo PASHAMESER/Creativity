@@ -179,4 +179,12 @@ body {
     }
 }
 
+/* Media sm  */
+@media (min-width:400px) and (max-width:767px) {
+    .ContainerPage .boxLogin{
+        width: 400px;
+    }
+
+}
+
 /* نهاية كود ديف البوكس كونتينر */
