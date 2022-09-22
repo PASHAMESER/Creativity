@@ -81,16 +81,37 @@ let loading = () => {
   }, 1500);
 };
 
-
-window.onload = loading()
+// window.onload = loading()
 
 // بداية كود الضغط علي ابدأ
 
-let linkBtnStr =document.getElementById("link-btn-str")
+// let linkBtnStr =document.getElementById("link-btn-str")
 
-linkBtnStr.addEventListener('click' , ()=>{
-  setTimeout(()=>{
-    this.location.href = "HTML/login.html"
-  },500)
-  loading()
-})
+// linkBtnStr.addEventListener('click' , ()=>{
+//   setTimeout(()=>{
+//     this.location.href = "HTML/login.html"
+//   },500)
+//   loading()
+// })
+
+// let chengeColor = document.getElementById("chengeColor")
+
+// let dev = document.querySelector(".Congratulations-to-the-user")
+
+/* بداية كود تشيك على قيمة البريد */
+
+let btnLogin = document.getElementById("btn-login");
+let btnEmail = document.getElementById("btn-email");
+let btnPassword = document.getElementById("btn-password");
+
+btnLogin.addEventListener("click", (e) => {
+  if ((btnEmail.value === "admin" && btnPassword.value) === "roshdy") {
+    e.preventDefault();
+    alert("اتفضل يا باش مهندس");
+    window.location.href = "dashboard.html";
+  } else {
+    alert("ارجع ي حرامى");
+  }
+});
+
+/* نهاية كود تشيك على قيمة البريد */

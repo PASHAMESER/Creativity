@@ -1,0 +1,307 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Tajawal;
+}
+
+@font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal-Black.ttf);
+}
+
+@font-face {
+    font-family: "TajawalOne";
+    src: url(../fonts/Tajawal-Medium.ttf);
+}
+
+::selection {
+    color: white;
+    background-color: deeppink;
+}
+
+
+.ContainerPage {
+    background-color: #773D4C;
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerPage .devContainerstatistics {
+    /* border: 1px solid black; */
+    /* background-color: aliceblue; */
+    height: 1000px;
+}
+.ContainerPage .devContainerstatistics .devstatistics {
+    /* border: solid 1px red; */
+    width: 1600px;
+}
+
+/* بداية كود الناف بار */
+.ContainerPage .devContainerstatistics .devstatistics .containerNav {
+    width: 100%;
+    background-color: #690F32;
+    height: 60px;
+    border-radius: 5px;
+    padding: 6px 0px;
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar {
+    width: 100%;
+    /* background-color: #690F32; */
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar p {
+    margin: 2px;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itemicon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname  h3 {
+    font-family: "Tajawal";
+    margin: 0;
+    font-size: 20px;
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname  {
+    text-align: center;
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname  h5 {
+    font-family: "TajawalOne";
+    margin: 0;
+    color: #dbdbdb;
+}
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* نهاية كود الناف بار */
+
+/* بداية كود الكونتينر الاساسى اللي شايل محتوي البوكسات كلها */
+
+.devstatistics .bigcontainerboxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50px;
+}
+
+/* بداية كود الكونتينر الاساسى اللي شايل محتوي البوكسات كلها */
+
+/* بداية كود البوكسات الاربعة مع الديف الخامس */
+
+.devstatistics .containerForbox {
+    /* border: 1px solid red; */
+    height: 800px;
+    /* width: 48%; */
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.devstatistics .containerForbox .box {
+    width: 48%;
+    background-color: #690F32;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.devstatistics .containerForbox .box .boxcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 25px;
+    gap: 15px;
+}
+.devstatistics .containerForbox .box .boxcontent #namber {
+    font-size: 50px;
+    font-family: "Tajawal";
+}
+.devstatistics .containerForbox .box .boxcontent span {
+    font-family: "TajawalOne";
+}
+.devstatistics .containerForbox .box .boxcontent .devbg-icon {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #B31D4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent h2 {
+    font-family: "TajawalOne";
+}
+.devstatistics .containerForbox .boxAreport {
+    width: 98.5%;
+    background-color: #690F32;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    border-radius: 5px;
+}
+.devstatistics .containerForbox .boxAreport .textanditme {
+    font-family: "TajawalOne";
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.devstatistics .containerForbox .boxAreport h2 {
+    font-size: 30px;
+}
+.devstatistics .containerForbox .boxAreport .textanditme .devbg-icon {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #B31D4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+/* نهاية كود البوكسات الاربعة مع الديف الخامس */
+
+/* بداية كود البوكسين اللى فى النص */
+
+.devstatistics .containertwobox {
+    /* border: 1px solid rgb(47, 0, 255); */
+    height: 800px;
+    /* width: 48%; */
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+/* .devstatistics .bigcontainerboxes .containertwobox {
+
+} */
+.devstatistics .bigcontainerboxes .containertwobox .boxone {
+    height: 300px;
+    background-color: #CE3675;
+    background-image: url(../imges/dev.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    color: white;
+}
+.devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent .devbg-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #F0448B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.devstatistics .bigcontainerboxes .containertwobox .boxtow {
+    width: 100%;
+    background-color: #690F32;
+    height: 455px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent h3 {
+    font-family: "TajawalOne";
+    margin: 20px;
+}
+.devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent .devthreeitme {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent .devthreeitme a {
+    color: white;
+    font-family: "TajawalOne";
+    padding: 15px 20px;
+    background-color: #A52A49;
+    border-radius: 50px;
+}
+
+/* نهاية كود البوكسين اللى فى النص */
+
+/* بداية كود البوكس اللى على اليمين  */
+
+.devstatistics .bigcontainerboxes .rightcontrolcontainer {
+    position: relative;
+    height: 800px;
+    width: 368px;
+    background-color: #690F32;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.devstatistics .bigcontainerboxes .rightcontrolcontainer .containeritme h1 {
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+}
+.devstatistics .bigcontainerboxes .rightcontrolcontainer .containeritme .itme {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding: 20px 0px;
+    gap: 10px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.devstatistics .bigcontainerboxes .rightcontrolcontainer .containeritme .itme a {
+    color: white;
+    font-family: "TajawalOne";
+}
+
+/* بداية كود البوكس اللى على اليمين  */
