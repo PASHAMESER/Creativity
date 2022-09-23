@@ -3,10 +3,8 @@
 let deviconColor = document.querySelector(".deviconColor")
 let devitmeColor = document.querySelector(".devitmeColor")
 
-// devitmeColor.remove()
 deviconColor.addEventListener('click' , ()=>{
-    devitmeColor.classList.toggle("devitmeColor")
-    devitmeColor.style.transform = "scale(1,1)"
+    devitmeColor.classList.toggle("showItmeColor")
 })
 
 let color1 = document.getElementById("color1")
@@ -24,6 +22,19 @@ let devbgIcon = document.querySelectorAll(".devbg-icon")
 let forBox = document.querySelectorAll(".box")
 
 color1.onclick = ()=>{
+    forBox.forEach(itme => {
+        itme.classList.remove("activecontinerdevboxse")
+        devbgIcon.forEach(itmeIcon =>{
+            itmeIcon.classList.remove("activecontinerdevicon")
+        })
+    });
+    ContainerPage.classList.remove("activecontiner")
+    boxAreport.classList.remove("activecontinerdevboxse")
+    boxone.classList.remove("activecontinerStar")
+    boxtow.classList.remove("activecontinerdevboxse")
+    containerNav.classList.remove("activecontinerdevboxse")
+    rightcontrolcontainer.classList.remove("activecontinerdevboxse")
+    viweAll.classList.remove("activecontinerdevBtn")
 }
 
 color2.onclick = ()=>{
