@@ -86,7 +86,6 @@ body {
     background-color: #2A32A5 !important ;
 }
 
-
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .deviconColor {
     position: absolute;
     left: 100px;
@@ -107,6 +106,12 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1px;
+    transform: scale(0,0);
+    transition: 0.3s;
+}
+.gggggg {
+    transform: scale(1,1);
+    transition: 0.3s;
 }
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .deviconColor .devitmeColor #color1 {
     height: 25px;
@@ -198,7 +203,7 @@ body {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     color: white;
 }
 .devstatistics .containerForbox .box .boxcontent {
@@ -207,6 +212,7 @@ body {
     align-items: flex-end;
     font-size: 25px;
     gap: 15px;
+    margin-right: 35px;
 }
 .devstatistics .containerForbox .box .boxcontent #namber {
     font-size: 50px;

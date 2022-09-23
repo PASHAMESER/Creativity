@@ -5,8 +5,8 @@ let devitmeColor = document.querySelector(".devitmeColor")
 
 // devitmeColor.remove()
 deviconColor.addEventListener('click' , ()=>{
-    // devitmeColor.classList.add("devitmeColor")
     devitmeColor.classList.toggle("devitmeColor")
+    devitmeColor.style.transform = "scale(1,1)"
 })
 
 let color1 = document.getElementById("color1")
