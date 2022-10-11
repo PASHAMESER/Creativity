@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: Tajawal;
+    background-color: #773D4C;
 }
 
 @font-face {
@@ -23,21 +24,16 @@ body {
     background-color: deeppink;
 }
 .ContainerPage {
-    background-color: #773D4C;
-    height: 1100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .ContainerPage .devContainerstatistics {
-    /* border: 1px solid black; */
-    /* background-color: aliceblue; */
-    height: 1000px;
+    position: relative;
+    top: 50px;
+        padding: 0px 0px 200px 0px;
 }
 .ContainerPage .devContainerstatistics .devstatistics {
-    /* border: solid 1px red; */
-    width: 1600px;
+    width: 100%;
 }
 
 /* بداية كود الناف بار */
@@ -195,8 +191,7 @@ body {
 .devstatistics .containerForbox {
     /* border: 1px solid red; */
     height: 800px;
-    /* width: 48%; */
-    width: 40%;
+    width: 49%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -268,22 +263,59 @@ body {
     font-size: 25px;
 }
 
+@media (min-width: 340px) and (max-width: 767px){
+    .rightcontrolcontainer {
+        display: none;
+    }
+    .devstatistics .containerForbox  {
+        width: 98%;
+    }
+    .devstatistics .containerForbox .box{
+        width: 100%;
+    }
+    .devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent h3 {
+        font-size: 18px;
+    }
+    .devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent .devthreeitme a {
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .rightcontrolcontainer {
+        display: none;
+    }
+    .devstatistics .containerForbox  {
+        width: 98%;
+    }
+    .devstatistics .containerForbox .box{
+        width: 48%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1599px){
+    .rightcontrolcontainer {
+        display: none;
+    }
+    .devstatistics .containerForbox  {
+        width: 49%;
+    }
+    .devstatistics .containerForbox .box{
+        width: 48%;
+    }
+}
+
+
 /* نهاية كود البوكسات الاربعة مع الديف الخامس */
 
 /* بداية كود البوكسين اللى فى النص */
 
 .devstatistics .containertwobox {
-    /* border: 1px solid rgb(47, 0, 255); */
     height: 800px;
-    /* width: 48%; */
-    width: 35%;
+    width: 49%;
     display: flex;
     flex-wrap: wrap;
     gap: 45px;
 }
-/* .devstatistics .bigcontainerboxes .containertwobox {
 
-} */
 .devstatistics .bigcontainerboxes .containertwobox .boxone {
     height: 300px;
     background-color: #CE3675;
@@ -347,6 +379,46 @@ body {
     padding: 15px 20px;
     background-color: #A52A49;
     border-radius: 50px;
+}
+
+@media (min-width: 340px) and (max-width: 767px){
+    .devstatistics .containertwobox  {
+        width: 98%;
+        margin-top: 600px;
+    }
+    .devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent h2 {
+        font-size: 22px;
+    }
+    .devstatistics .bigcontainerboxes .containertwobox .boxone span {
+        text-align: center;
+        font-size: 17px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+
+    .devstatistics .containertwobox  {
+        width: 98%;
+        margin-top: 100px;
+    }
+    .devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent h2 {
+        font-size: 22px;
+    }
+    .devstatistics .bigcontainerboxes .containertwobox .boxone span {
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1600px){
+    .devstatistics .containerForbox  {
+        width: 40%;
+    }
+    .devstatistics .containerForbox .box{
+        width: 48%;
+    }
+    .devstatistics .containertwobox {
+        width: 32%;
+    }
 }
 
 /* نهاية كود البوكسين اللى فى النص */
