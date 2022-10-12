@@ -313,7 +313,7 @@ body {
     width: 49%;
     display: flex;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 40px;
 }
 
 .devstatistics .bigcontainerboxes .containertwobox .boxone {
@@ -349,7 +349,7 @@ body {
 .devstatistics .bigcontainerboxes .containertwobox .boxtow {
     width: 100%;
     background-color: #690F32;
-    height: 455px;
+    height: 460px;
     border-radius: 5px;
     display: flex;
     align-items: center;

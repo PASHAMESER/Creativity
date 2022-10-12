@@ -1,8 +1,3 @@
-
-
-
-
-
 let containerDottedLoader = document.querySelector(".container-dotted-loader");
 let dottedLoader = document.querySelector(".dotted-loader");
 
@@ -28,22 +23,10 @@ linkBtnStr.addEventListener('click' , ()=>{
 })
 
 
-/* Start chat */
 
 var boxChat = document.querySelector(".boxChat");
 var imgBoxChat = document.getElementById("imgBoxChat");
 var fullchat = document.querySelector(".fullchat");
-imgBoxChat.onclick = function () {
-  fullchat.style.display = "block";
-  imgBoxChat.style.display = "none";
-};
-
-var MiniMaze = document.getElementById("MiniMaze");
-MiniMaze.onclick = function () {
-  fullchat.style.display = "none";
-  imgBoxChat.style.display = "block";
-};
-
 var imgSend = document.getElementById("img-send");
 var textarea = document.getElementById("textarea");
 var pLeft = document.getElementById("left");
@@ -64,7 +47,18 @@ imgSend.onclick = function () {
   }
 };
 
-/* End chat */
+imgBoxChat.onclick = function () {
+    fullchat.style.display = "block";
+    imgBoxChat.style.display = "none";
+  };
+  
+  var MiniMaze = document.getElementById("MiniMaze");
+  MiniMaze.onclick = function () {
+    fullchat.style.display = "none";
+    imgBoxChat.style.display = "block";
+  };
+
+
 
 // Start date
 
@@ -76,51 +70,44 @@ imgSend.onclick = function () {
 
 // End date
 
-let continerBoxAlert = document.querySelector(".continerBoxAlert")
-let boxAlertH1 = document.getElementById("textOnline")
 
-window.onload = function () {
-  if (window.navigator.online) {
-    online();
-  } else {
-    offline();
-  }
-
-  /* Start Chet */
-
-  boxChat.classList.add("continerBoxAlertActive")
-
-  /* Start Chet */
-
-};
-
-window.addEventListener("online", function(){
-  online()
-});
-window.addEventListener("offline", function (){
-  offline()
-  continerBoxAlert.style.display = "none"
-});
-
+/* Start chat */
+let continerBoxAlert = document.querySelector(".continerBoxAlert");
+let boxAlertH1 = document.getElementById("textOnline");
 let checkInternet = document.getElementById("internet");
+
+// Online or Offline
 
 function online() {
   checkInternet.style.backgroundColor = "green";
-  // continerBoxAlert.classList.remove("continerBoxAlertActive")
-  continerBoxAlert.classList.add("continerBoxAlertActive")
-    setTimeout(function() {
-      continerBoxAlert.style.display = "none"
-    },1000)
+  continerBoxAlert.classList.remove("continerBoxAlertActive")
+  continerBoxAlert.classList.add("continerBoxAlertActive");
+  boxAlertH1.innerHTML = "انت متصل حاليا";
+  setTimeout(function () {
+    continerBoxAlert.style.display = "none";
+  }, 2000);
 }
 function offline() {
-    checkInternet.style.backgroundColor = "red";
-    continerBoxAlert.classList.add("continerBoxAlertActive")
-    boxAlertH1.innerHTML = "انت غير متصل حاليا"
-    setTimeout(function () {
+  checkInternet.style.backgroundColor = "red";
+  continerBoxAlert.classList.add("continerBoxAlertActive");
+  boxAlertH1.innerHTML = "انت غير متصل حاليا";
+  setTimeout(function () {
       continerBoxAlert.classList.remove("continerBoxAlertActive")
-    },2000)
+  }, 2000);
 }
 
+window.onload = function () {
+  if (window.navigator.onLine) {
+    checkInternet.style.backgroundColor = "green";
+  } else {
+    checkInternet.style.backgroundColor = "red";
+  }
 
+};
 
-
+window.addEventListener("online", function () {
+  online();
+});
+window.addEventListener("offline", function () {
+  offline();
+});

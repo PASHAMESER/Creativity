@@ -163,10 +163,12 @@ body {
     .devHeaderAndSectionHomePage header ul li a {
         font-size: 15px;
     }
+
     .devHeaderAndSectionHomePage header #logo {
         font-size: 20px;
     }
-    .textHome{
+
+    .textHome {
         font-size: 9px;
     }
 }
@@ -176,10 +178,12 @@ body {
     .devHeaderAndSectionHomePage header ul li a {
         font-size: 15px;
     }
+
     .devHeaderAndSectionHomePage header #logo {
         font-size: 20px;
     }
-    .textHome{
+
+    .textHome {
         font-size: 10px;
     }
 }
@@ -379,6 +383,7 @@ body {
     padding: 150px 0px;
     background-image: linear-gradient(to right, #b392ac, #e8c2ca);
 }
+
 .devForContanier .boxContact {
     margin: 10px;
 }
@@ -482,16 +487,16 @@ body {
     right: 50px;
     bottom: 150px;
     z-index: 1000;
-    transform: scale(0,0);
-  }
-  
-  .boxChat img {
+    transform: scale(1, 1);
+}
+
+.boxChat img {
     width: 60px;
     height: 60px;
     cursor: pointer;
-  }
-  
-  .boxChat .chat {
+}
+
+.boxChat .chat {
     position: relative;
     height: 60px;
     width: 300px;
@@ -499,27 +504,28 @@ body {
     border-radius: 5px 5px 0px 0px;
     display: flex;
     align-items: center;
-  }
-  
-  .boxChat .fullchat {
+}
+
+.boxChat .fullchat {
     display: none;
-  }
-  
-  .boxChat .fullchat .chat #MiniMaze {
+}
+
+.boxChat .fullchat .chat #MiniMaze {
     position: relative;
     bottom: 20px;
     left: 100px;
     color: white;
     cursor: pointer;
-  }
-  
-  .boxChat .chat .headerchat {
+}
+
+.boxChat .chat .headerchat {
     display: flex;
     gap: 100px;
     align-items: center;
     padding: 0px 15px;
-  }
-  .boxChat .chat .headerchat #internet {
+}
+
+.boxChat .chat .headerchat #internet {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -529,50 +535,50 @@ body {
     left: 87px;
     top: 35px;
     cursor: pointer;
-  }
-  
-  .boxChat .chat .headerchat h2 {
+}
+
+.boxChat .chat .headerchat h2 {
     color: white;
     font-weight: 100;
     padding: 0;
     margin: 0;
     font-size: 22px;
-  }
-  
-  .boxChat .chat .headerchat img {
+}
+
+.boxChat .chat .headerchat img {
     width: 55px;
     height: 55px;
     transition: 0.3s;
-  }
-  
-  /* .boxChat .chat .headerchat img:hover {
+}
+
+/* .boxChat .chat .headerchat img:hover {
     transform: rotate(25deg);
   } */
-  
-  .boxChat .messagepage {
+
+.boxChat .messagepage {
     position: relative;
     width: 100%;
     height: 400px;
     background-color: #F9F9F9;
     overflow-y: hidden;
-  }
-  
-  .boxChat .messagepage .divP {
+}
+
+.boxChat .messagepage .divP {
     display: block;
     max-height: 300px;
     overflow-y: scroll;
-  }
-  
-  .boxChat .messagepage #left {
+}
+
+.boxChat .messagepage #left {
     /* padding: 5px; */
     margin: 10px 0px 0px 10px;
     max-width: 150px;
     background-color: #3f51b5;
     color: white;
     border-radius: 10px 10px 10px 0px;
-  }
-  
-  .boxChat .messagepage #right {
+}
+
+.boxChat .messagepage #right {
     position: relative;
     text-align: right;
     left: 120px;
@@ -582,29 +588,29 @@ body {
     color: white;
     border-radius: 10px 10px 10px 0px;
     /* overflow: auto; */
-  }
-  
-  .boxChat .messagepage .boxmessage {
+}
+
+.boxChat .messagepage .boxmessage {
     position: absolute;
     bottom: 0;
     height: 60px;
     display: flex;
     gap: 10px;
-  }
-  
-  .boxChat .messagepage .boxmessage img {
+}
+
+.boxChat .messagepage .boxmessage img {
     height: 50px;
     width: 50px;
     position: relative;
     left: 3px;
     transition: 0.3s;
-  }
-  
-  .boxChat .messagepage .boxmessage img:hover {
+}
+
+.boxChat .messagepage .boxmessage img:hover {
     transform: rotate(-15deg);
-  }
-  
-  .boxChat .messagepage .boxmessage #textarea {
+}
+
+.boxChat .messagepage .boxmessage #textarea {
     outline: none;
     /* text-align: right; */
     resize: none;
@@ -614,18 +620,18 @@ body {
     width: 70%;
     z-index: 100;
     padding: 0 5px;
-  }
-  
-  .boxChat .messagepage .boxmessage #textarea::placeholder {
+}
+
+.boxChat .messagepage .boxmessage #textarea::placeholder {
     position: absolute;
     top: 16px;
     padding: 0px 0px 0px 10px;
     color: rgb(156, 156, 156);
     font-weight: 100;
     font-size: 12px;
-  }
-  
-  /* End chat */
+}
+
+/* End chat */
 
 
 /* Start Alert Internet */
@@ -637,22 +643,25 @@ body {
     height: 60px;
     background-color: rgb(74 73 73);
     border-radius: 5px;
-    transform: scale(0,0);
+    transform: scale(0, 0);
     cursor: pointer;
-  }
-  .continerBoxAlert .item {
+}
+
+.continerBoxAlert .item {
     display: flex;
     align-items: center;
     margin: auto;
     color: white;
-  }
-  .continerBoxAlert .item h2 {
+}
+
+.continerBoxAlert .item h2 {
     font-size: 20px;
-  }
-  .continerBoxAlertActive{
+}
+
+.continerBoxAlertActive {
     transition: 0.3s;
     display: flex;
-    transform: scale(1,1);
-  }
-  
-  /* Start Alert Internet */
+    transform: scale(1, 1);
+}
+
+/* Start Alert Internet */
