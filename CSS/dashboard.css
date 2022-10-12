@@ -23,15 +23,15 @@ body {
     color: white;
     background-color: deeppink;
 }
-.ContainerPage {
 
-}
+.ContainerPage {}
 
 .ContainerPage .devContainerstatistics {
     position: relative;
     top: 50px;
-        padding: 0px 0px 200px 0px;
+    padding: 0px 0px 200px 0px;
 }
+
 .ContainerPage .devContainerstatistics .devstatistics {
     width: 100%;
 }
@@ -44,6 +44,7 @@ body {
     border-radius: 5px;
     padding: 6px 0px;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar {
     position: relative;
     width: 100%;
@@ -62,25 +63,28 @@ body {
 
 .activecontiner {
     transition: 0.5s;
-    background-color: #3D4677 !important ;
+    background-color: #3D4677 !important;
 }
+
 .activecontinerStar {
     transition: 0.5s;
-    background-color: #3936CE !important ;
+    background-color: #3936CE !important;
 }
+
 .activecontinerdevboxse {
     transition: 0.5s;
-    background-color: #270F69 !important ;
+    background-color: #270F69 !important;
 }
 
 .activecontinerdevicon {
     transition: 0.5s;
-    background-color: #321DB2 !important ;
+    background-color: #321DB2 !important;
     color: #7C6FF1;
 }
+
 .activecontinerdevBtn {
     transition: 0.5s;
-    background-color: #2A32A5 !important ;
+    background-color: #2A32A5 !important;
 }
 
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .deviconColor {
@@ -92,6 +96,7 @@ body {
     flex-direction: column;
     gap: 5px;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .devitmeColor {
     height: 40px;
     width: 80px;
@@ -103,14 +108,16 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1px;
-    transform: scale(0,0);
+    transform: scale(0, 0);
     transition: 0.3s;
     left: 70px;
 }
+
 .showItmeColor {
-    transform: scale(1,1) !important;
+    transform: scale(1, 1) !important;
     transition: 0.3s;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .devitmeColor #color1 {
     height: 25px;
     width: 25px;
@@ -118,6 +125,7 @@ body {
     background-color: #690F32;
     cursor: pointer;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .devitmeColor #color2 {
     height: 25px;
     width: 25px;
@@ -125,6 +133,7 @@ body {
     background-color: #270F69;
     cursor: pointer;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .devitmeColor #color3 {
     height: 25px;
     width: 25px;
@@ -141,30 +150,36 @@ body {
     background-color: white;
     border-radius: 50%;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .itemicon {
     display: flex;
     align-items: center;
     gap: 30px;
     cursor: pointer;
 }
-.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname  h3 {
+
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname h3 {
     font-family: "Tajawal";
     margin: 0;
     font-size: 20px;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname  {
+
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname {
     text-align: center;
 }
-.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname  h5 {
+
+.devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname .devname h5 {
     font-family: "TajawalOne";
     margin: 0;
     color: #dbdbdb;
 }
+
 .devContainerstatistics .devstatistics .containerNav .contentnavbar .itmeiconimgandname img {
     height: 50px;
     width: 50px;
@@ -196,6 +211,7 @@ body {
     flex-wrap: wrap;
     gap: 15px;
 }
+
 .devstatistics .containerForbox .box {
     width: 48%;
     background-color: #690F32;
@@ -206,6 +222,7 @@ body {
     justify-content: flex-end;
     color: white;
 }
+
 .devstatistics .containerForbox .box .boxcontent {
     display: flex;
     flex-direction: column;
@@ -214,13 +231,16 @@ body {
     gap: 15px;
     margin-right: 35px;
 }
+
 .devstatistics .containerForbox .box .boxcontent #namber {
     font-size: 50px;
     font-family: "Tajawal";
 }
+
 .devstatistics .containerForbox .box .boxcontent span {
     font-family: "TajawalOne";
 }
+
 .devstatistics .containerForbox .box .boxcontent .devbg-icon {
     height: 70px;
     width: 70px;
@@ -231,9 +251,11 @@ body {
     justify-content: center;
     font-size: 25px;
 }
+
 .devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent h2 {
     font-family: "TajawalOne";
 }
+
 .devstatistics .containerForbox .boxAreport {
     width: 98.5%;
     background-color: #690F32;
@@ -243,15 +265,18 @@ body {
     color: white;
     border-radius: 5px;
 }
+
 .devstatistics .containerForbox .boxAreport .textanditme {
     font-family: "TajawalOne";
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .devstatistics .containerForbox .boxAreport h2 {
     font-size: 30px;
 }
+
 .devstatistics .containerForbox .boxAreport .textanditme .devbg-icon {
     height: 70px;
     width: 70px;
@@ -263,42 +288,62 @@ body {
     font-size: 25px;
 }
 
-@media (min-width: 340px) and (max-width: 767px){
+@media (min-width: 340px) and (max-width: 767px) {
     .rightcontrolcontainer {
         display: none;
     }
-    .devstatistics .containerForbox  {
+
+    .devstatistics .containerForbox {
         width: 98%;
     }
-    .devstatistics .containerForbox .box{
+
+    .devstatistics .containerForbox .box {
         width: 100%;
+        justify-content: center;
+    }
+    .devstatistics .containerForbox .box .boxcontent {
+        margin-right: 0;
+        align-items: center;
+    }
+    .devstatistics .containerForbox .boxAreport {
+        width: 100%;
+    }
+    .devstatistics .containerForbox .boxAreport h2 {
+        font-size: 19px;
     }
     .devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent h3 {
         font-size: 18px;
     }
+
     .devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent .devthreeitme a {
         font-size: 16px;
     }
 }
-@media (min-width: 768px) and (max-width: 1199px){
+
+@media (min-width: 768px) and (max-width: 1199px) {
     .rightcontrolcontainer {
         display: none;
     }
-    .devstatistics .containerForbox  {
+
+    .devstatistics .containerForbox {
         width: 98%;
     }
-    .devstatistics .containerForbox .box{
+
+    .devstatistics .containerForbox .box {
         width: 48%;
     }
 }
-@media (min-width: 1200px) and (max-width: 1599px){
+
+@media (min-width: 1200px) and (max-width: 1599px) {
     .rightcontrolcontainer {
         display: none;
     }
-    .devstatistics .containerForbox  {
+
+    .devstatistics .containerForbox {
         width: 49%;
     }
-    .devstatistics .containerForbox .box{
+
+    .devstatistics .containerForbox .box {
         width: 48%;
     }
 }
@@ -330,12 +375,14 @@ body {
     text-align: right;
     color: white;
 }
+
 .devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent {
     font-size: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent .devbg-icon {
     height: 70px;
     width: 70px;
@@ -346,6 +393,7 @@ body {
     justify-content: center;
     font-size: 25px;
 }
+
 .devstatistics .bigcontainerboxes .containertwobox .boxtow {
     width: 100%;
     background-color: #690F32;
@@ -363,16 +411,19 @@ body {
     justify-content: center;
     gap: 15px;
 }
+
 .devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent h3 {
     font-family: "TajawalOne";
     margin: 20px;
 }
+
 .devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent .devthreeitme {
     font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .devstatistics .bigcontainerboxes .containertwobox .boxtow .boxcontent .devthreeitme a {
     color: white;
     font-family: "TajawalOne";
@@ -381,41 +432,48 @@ body {
     border-radius: 50px;
 }
 
-@media (min-width: 340px) and (max-width: 767px){
-    .devstatistics .containertwobox  {
+@media (min-width: 340px) and (max-width: 767px) {
+    .devstatistics .containertwobox {
         width: 98%;
         margin-top: 600px;
     }
+
     .devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent h2 {
         font-size: 22px;
     }
+
     .devstatistics .bigcontainerboxes .containertwobox .boxone span {
         text-align: center;
         font-size: 17px;
     }
 }
-@media (min-width: 768px) and (max-width: 1199px){
 
-    .devstatistics .containertwobox  {
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .devstatistics .containertwobox {
         width: 98%;
         margin-top: 100px;
     }
+
     .devstatistics .bigcontainerboxes .containertwobox .boxone .boxcontent h2 {
         font-size: 22px;
     }
+
     .devstatistics .bigcontainerboxes .containertwobox .boxone span {
         text-align: center;
         font-size: 17px;
     }
 }
 
-@media (min-width: 1600px){
-    .devstatistics .containerForbox  {
+@media (min-width: 1600px) {
+    .devstatistics .containerForbox {
         width: 40%;
     }
-    .devstatistics .containerForbox .box{
+
+    .devstatistics .containerForbox .box {
         width: 48%;
     }
+
     .devstatistics .containertwobox {
         width: 32%;
     }
@@ -433,11 +491,13 @@ body {
     border-radius: 5px;
     margin-left: 30px;
 }
+
 .devstatistics .bigcontainerboxes .rightcontrolcontainer .containeritme h1 {
     color: white;
     text-align: right;
     margin-right: 20px;
 }
+
 .devstatistics .bigcontainerboxes .rightcontrolcontainer .containeritme .itme {
     display: flex;
     align-items: center;
@@ -449,6 +509,7 @@ body {
     font-size: 25px;
     cursor: pointer;
 }
+
 .devstatistics .bigcontainerboxes .rightcontrolcontainer .containeritme .itme a {
     color: white;
     font-family: "TajawalOne";
