@@ -114,10 +114,24 @@ body {
 }
 
 .devHeaderAndSectionHomePage {
+    /* width: 100%;
+    height: 1060px;
+    display: flex;
+    justify-content: center; */
+    /*  */
+    background-image: url(./imges/imgHome.jpg);
     width: 100%;
     height: 1060px;
     display: flex;
     justify-content: center;
+    background-image: url(./imges/imgHome.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease ;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 
 .devHeaderAndSectionHomePage img {
@@ -560,7 +574,7 @@ body {
     width: 100%;
     height: 400px;
     background-color: #F9F9F9;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 .boxChat .messagepage .divP {
@@ -569,15 +583,22 @@ body {
     overflow-y: scroll;
 }
 
-.boxChat .messagepage #left {
-    /* padding: 5px; */
+/* .boxChat .messagepage #left {
+    padding: 5px;
+    margin: 10px 0px 0px 10px;
+    max-width: 150px;
+    background-color: #3f51b5;
+    color: white;
+    border-radius: 10px 10px 10px 0px;
+} */
+.psendLeft {
+    padding: 5px;
     margin: 10px 0px 0px 10px;
     max-width: 150px;
     background-color: #3f51b5;
     color: white;
     border-radius: 10px 10px 10px 0px;
 }
-
 .boxChat .messagepage #right {
     position: relative;
     text-align: right;
@@ -591,7 +612,7 @@ body {
 }
 
 .boxChat .messagepage .boxmessage {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 60px;
     display: flex;
@@ -631,11 +652,21 @@ body {
     font-size: 12px;
 }
 
+@media (max-width: 400px) {
+    .boxChat {
+        position: fixed !important;
+        z-index: 1000;
+        transform: scale(1, 1);
+        right: 20px;
+        bottom: 50px;
+    }
+}
+
 /* End chat */
 
 
 /* Start Alert Internet */
-.continerBoxAlert {
+.containerBoxAlert {
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -647,18 +678,18 @@ body {
     cursor: pointer;
 }
 
-.continerBoxAlert .item {
+.containerBoxAlert .item {
     display: flex;
     align-items: center;
     margin: auto;
     color: white;
 }
 
-.continerBoxAlert .item h2 {
+.containerBoxAlert .item h2 {
     font-size: 20px;
 }
 
-.continerBoxAlertActive {
+.containerBoxAlertActive {
     transition: 0.3s;
     display: flex;
     transform: scale(1, 1);

@@ -1,28 +1,54 @@
-let containerDottedLoader = document.querySelector(".container-dotted-loader");
-let dottedLoader = document.querySelector(".dotted-loader");
+// let containerDottedLoader = document.querySelector(".container-dotted-loader");
+// let dottedLoader = document.querySelector(".dotted-loader");
 
-let loading = function () {
-  containerDottedLoader.style.display = "flex";
-  dottedLoader.style.display = "flex";
-  setTimeout(() => {
-    dottedLoader.style.display = "none";
-    containerDottedLoader.style.display = "none";
-  }, 1000);
-};
+// let loading = function () {
+//   containerDottedLoader.style.display = "flex";
+//   dottedLoader.style.display = "flex";
+//   setTimeout(() => {
+//     dottedLoader.style.display = "none";
+//     containerDottedLoader.style.display = "none";
+//   }, 1000);
+// };
 
-window.onload = loading()
-
-
-let linkBtnStr =document.getElementById("link-btn-str")
-
-linkBtnStr.addEventListener('click' , ()=>{
-  setTimeout(()=>{
-    this.location.href = "HTML/login.html"
-  },500)
-  loading()
-})
+// window.onload = loading()
 
 
+// let linkBtnStr =document.getElementById("link-btn-str")
+
+// linkBtnStr.addEventListener('click' , ()=>{
+//   setTimeout(()=>{
+//     this.location.href = "HTML/login.html"
+//   },500)
+//   loading()
+// })
+
+// بداية كود تقليب صور الصفحة
+
+var i = 0;
+var myImges = [
+  "/imges/1.jpg",
+  "/imges/2.jpg",
+  "/imges/3.jpg",
+  "/imges/4.jpg",
+  "/imges/5.jpg",
+  "/imges/6.jpg",
+  "/imges/7.jpg",
+  "/imges/8.jpg",
+  "/imges/9.jpg",
+]
+
+var SectionHomePage = document.querySelector(".devHeaderAndSectionHomePage")
+
+var slideShow = function () {
+  SectionHomePage.style.backgroundImage = "url("+myImges[i]+")"
+  if (i<myImges.length -1) {
+    i++
+  }else{
+    i = 0;
+  }
+  setTimeout(slideShow , 1000)
+}
+slideShow()
 
 var boxChat = document.querySelector(".boxChat");
 var imgBoxChat = document.getElementById("imgBoxChat");
@@ -31,10 +57,16 @@ var imgSend = document.getElementById("img-send");
 var textarea = document.getElementById("textarea");
 var pLeft = document.getElementById("left");
 var pRight = document.getElementById("right");
+var divPRight = document.querySelector(".divP-right");
 
 imgSend.onclick = function () {
-  if (textarea.value == "hey") {
-    pLeft.innerHTML = textarea.value;
+  var psendLeft = document.createElement("P")
+    psendLeft.className = "psendLeft"
+  divPRight.appendChild(psendLeft)
+  psendLeft.innerHTML += textarea.value;
+  if (textarea.value == "hey"|| textarea.value == "hi") {
+    // pLeft.innerHTML = textarea.value;
+    
     pLeft.style.padding = "5px";
     setTimeout(() => {
 
@@ -72,7 +104,7 @@ imgBoxChat.onclick = function () {
 
 
 /* Start chat */
-let continerBoxAlert = document.querySelector(".continerBoxAlert");
+let containerBoxAlert = document.querySelector(".containerBoxAlert");
 let boxAlertH1 = document.getElementById("textOnline");
 let checkInternet = document.getElementById("internet");
 
@@ -80,19 +112,19 @@ let checkInternet = document.getElementById("internet");
 
 function online() {
   checkInternet.style.backgroundColor = "green";
-  continerBoxAlert.classList.remove("continerBoxAlertActive")
-  continerBoxAlert.classList.add("continerBoxAlertActive");
+  containerBoxAlert.classList.remove("containerBoxAlertActive")
+  containerBoxAlert.classList.add("containerBoxAlertActive");
   boxAlertH1.innerHTML = "انت متصل حاليا";
   setTimeout(function () {
-    continerBoxAlert.style.display = "none";
+    containerBoxAlert.style.display = "none";
   }, 2000);
 }
 function offline() {
   checkInternet.style.backgroundColor = "red";
-  continerBoxAlert.classList.add("continerBoxAlertActive");
+  containerBoxAlert.classList.add("containerBoxAlertActive");
   boxAlertH1.innerHTML = "انت غير متصل حاليا";
   setTimeout(function () {
-      continerBoxAlert.classList.remove("continerBoxAlertActive")
+      containerBoxAlert.classList.remove("containerBoxAlertActive")
   }, 2000);
 }
 
