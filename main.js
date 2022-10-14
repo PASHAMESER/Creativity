@@ -26,15 +26,15 @@ linkBtnStr.addEventListener('click' , ()=>{
 
 var i = 0;
 var myImges = [
-  "/imges/1.jpg",
-  "/imges/2.jpg",
-  "/imges/3.jpg",
-  "/imges/4.jpg",
-  "/imges/5.jpg",
-  "/imges/6.jpg",
-  "/imges/7.jpg",
-  "/imges/8.jpg",
-  "/imges/9.jpg",
+  "./imges/1.jpg",
+  "./imges/2.jpg",
+  "./imges/3.jpg",
+  "./imges/4.jpg",
+  "./imges/5.jpg",
+  "./imges/6.jpg",
+  "./imges/7.jpg",
+  "./imges/8.jpg",
+  "./imges/9.jpg",
 ]
 
 var SectionHomePage = document.querySelector(".devHeaderAndSectionHomePage")
