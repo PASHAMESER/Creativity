@@ -1,26 +1,26 @@
-// let containerDottedLoader = document.querySelector(".container-dotted-loader");
-// let dottedLoader = document.querySelector(".dotted-loader");
+let containerDottedLoader = document.querySelector(".container-dotted-loader");
+let dottedLoader = document.querySelector(".dotted-loader");
 
-// let loading = function () {
-//   containerDottedLoader.style.display = "flex";
-//   dottedLoader.style.display = "flex";
-//   setTimeout(() => {
-//     dottedLoader.style.display = "none";
-//     containerDottedLoader.style.display = "none";
-//   }, 1000);
-// };
+let loading = function () {
+  containerDottedLoader.style.display = "flex";
+  dottedLoader.style.display = "flex";
+  setTimeout(() => {
+    dottedLoader.style.display = "none";
+    containerDottedLoader.style.display = "none";
+  }, 1000);
+};
 
-// window.onload = loading()
+window.onload = loading()
 
 
-// let linkBtnStr =document.getElementById("link-btn-str")
+let linkBtnStr =document.getElementById("link-btn-str")
 
-// linkBtnStr.addEventListener('click' , ()=>{
-//   setTimeout(()=>{
-//     this.location.href = "HTML/login.html"
-//   },500)
-//   loading()
-// })
+linkBtnStr.addEventListener('click' , ()=>{
+  setTimeout(()=>{
+    this.location.href = "HTML/login.html"
+  },500)
+  loading()
+})
 
 // بداية كود تقليب صور الصفحة
 
